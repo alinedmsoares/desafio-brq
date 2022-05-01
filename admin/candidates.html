@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.quicksearch/2.3.1/jquery.quicksearch.js"></script>
+    <script src="candidates.js"></script>
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/style.css">
+    <title>BRQ | Buscar candidatos</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="/index.html">
+            <img src="https://www.brq.com/_nuxt/image/1cbaa8.webp" width="100" height="auto">
+        </a>
+    </nav>
+
+    <main class="main-candidates-index">
+
+        <div class="button-actions">
+
+            <button class="btn-option"><a href="/admin/skill.html">Nova skill</a></button>
+            <button class="btn-option"><a href="/admin/certifications.html">Nova certificação</a></button>
+
+        </div>
+
+        <h1>Buscar candidatos</h1>
+
+        <div class="list-candidates">
+
+            <div class="form-group input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
+                <input name="consulta" id="txt_consulta" placeholder="Buscar" type="text" class="form-control" onkeyup="search()">
+            </div>
+
+            <table id="tabela" class="table table-hover">
+                <thead class="thead-light">
+                    <tr>
+                        <th scope="col">Nome</th>
+                        <th scope="col">CPF</th>
+                        <th scope="col">E-mail</th>
+                        <th scope="col">Telefone</th>
+                        <th scope="col">Skills</th>
+                        <th scope="col">Certificações</th>
+                        <!-- <th scope="col">Data de Nascimento</th>
+                        <th scope="col">Gênero</th> -->
+                    </tr>
+                </thead>
+                <tbody id="data">
+                </tbody>
+            </table>
+        </div>
+
+    </main>
+
+</body>
+
+</html>
