@@ -138,7 +138,7 @@ function selectCertification(event) {
     for (let i = 0; i < certification.length; i++) {
         const data = {
             candidatoId: candidate,
-            idCertificacao: parseInt(certification[i])
+            CertificacaoId: parseInt(certification[i])
         }
 
         fetch('https://desafiobrq.azurewebsites.net/CertificacaoCandidato/', {
@@ -154,7 +154,7 @@ function selectCertification(event) {
             console.log(res)
             res.json()
             alert("Candidatura enviada!")
-            window.location.reload()
+            window.location.replace("../index.html");
         })
 
         .catch(function(res) {
