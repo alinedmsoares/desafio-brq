@@ -1,6 +1,6 @@
 window.onload = getCandidates();
 
-function getCandidates(skill) {
+function getCandidates() {
 
     fetch("https://desafiobrq.azurewebsites.net/Candidato", {
         method: 'GET',

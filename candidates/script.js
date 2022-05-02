@@ -32,7 +32,7 @@ function newCandidate(event) {
         })
         .then(res => res.json())
         .then(res => {
-            window.location.replace("/candidates/skill.html?idCandidato=" + res.idCandidato);
+            window.location.replace("./skill.html?idCandidato=" + res.idCandidato);
         })
         .catch(function(res) {
             console.log(res)
@@ -82,7 +82,7 @@ function selectSkill(event) {
                 res.json()
             })
             .then(res => {
-                window.location.replace("/candidates/certifications.html?idCandidato=" + candidate);
+                window.location.replace("./certifications.html?idCandidato=" + candidate);
             })
             .catch(function(res) {
                 console.log(res)
